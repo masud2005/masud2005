@@ -8,7 +8,7 @@
 
 ###
 
-<p align="left">Fronted Developer</p>
+<h2 align="left">Fronted Developer</h2>
 
 ###
 
@@ -24,10 +24,11 @@
 
 ###
 
--- <p align="left">Learning Next.js: Delving into server-side rendering and static site generation to build faster and more efficient web applications.<br><br>
--- Building a Portfolio: Developing a personal portfolio to showcase my projects and skills.<br><br>Contributing to 
--- Open Source: Actively participating in open source projects to collaborate with other developers and improve my coding practices.<br><br>
--- Exploring TypeScript: Enhancing my JavaScript skills by learning TypeScript for better type safety and error handling.</p>
+- **Learning Next.js**: Delving into server-side rendering and static site generation to build faster and more efficient web applications.
+- **Building a Portfolio**: Developing a personal portfolio to showcase my projects and skills.
+- **Contributing to Open Source**: Actively participating in open source projects to collaborate with other developers and improve my coding practices.
+- **Exploring TypeScript**: Enhancing my JavaScript skills by learning TypeScript for better type safety and error handling.
+
 
 ###
 
