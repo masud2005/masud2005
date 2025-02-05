@@ -1,11 +1,11 @@
 <div align="center">
-  <img height="300" width="100%" src="https://i.ibb.co.com/8n8hQMV4/Github-Banner.png" alt="GitHub Banner" />
+  <img height="200" width="100%" src="https://i.ibb.co.com/8n8hQMV4/Github-Banner.png" alt="GitHub Banner" />
 </div>
 
 ---
 
 <h1 align="center">Hi, I'm Masud Rana 👋</h1>
-<h2 align="center">Frontend Developer | JavaScript Enthusiast</h2>
+<h2 align="center">Frontend Developer | React.js & JavaScript Specialist | Open Source Contributor</h2>
 
 ---
 
@@ -53,6 +53,8 @@ I'm a passionate **Frontend Web Developer** with a strong commitment to building
   <img src="https://skillicons.dev/icons?i=express" height="40" alt="Express.js" />
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=mongodb" height="40" alt="MongoDB" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=firebase" height="40" alt="Firebase" />
 </div>
 
 ### 🛠️ Tools & Technologies
@@ -62,6 +64,16 @@ I'm a passionate **Frontend Web Developer** with a strong commitment to building
   <img src="https://skillicons.dev/icons?i=github" height="40" alt="GitHub" />
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=vscode" height="40" alt="VS Code" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=npm" height="40" alt="NPM" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=netlify" height="40" alt="Netlify" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=vercel" height="40" alt="Vercel" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=postman" height="40" alt="Postman" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=cloudinary" height="40" alt="Cloudinary" />
 </div>
 
 ---
@@ -71,7 +83,8 @@ I'm a passionate **Frontend Web Developer** with a strong commitment to building
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=masud2005&show_icons=true&count_private=true&theme=dracula&hide_border=false" height="150" alt="GitHub Stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=masud2005&layout=compact&theme=blueberry&hide_border=false" height="150" alt="Top Languages" />
-  <img src="https://streak-stats.demolab.com?user=masud2005&theme=dracula&hide_border=false" height="150" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=masud2005&theme=dracula&hide_border=false" height="150" alt="GitHub Streak" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=masud2005&theme=react-dark&hide_border=false" height="300" alt="GitHub Contribution Graph" />
 </div>
 
 ---
