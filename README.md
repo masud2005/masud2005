@@ -1,88 +1,90 @@
-<div align="left">
-  <img height="400" width="100%" src="https://i.ibb.co.com/S7PGQq0/Frontend.jpg"  />
+<div align="center">
+  <img height="300" width="100%" src="https://i.ibb.co.com/8n8hQMV4/Github-Banner.png" alt="GitHub Banner" />
 </div>
 
-###
+---
 
-<h1 align="left">Hello, Iam Masud rana</h1>
+<h1 align="center">Hi, I'm Masud Rana 👋</h1>
+<h2 align="center">Frontend Developer | JavaScript Enthusiast</h2>
 
-###
+---
 
-<h2 align="left">Fronted Developer</h2>
+## 🚀 About Me
 
-###
+I'm a passionate **Frontend Web Developer** with a strong commitment to building **responsive, user-friendly** web applications. I specialize in **React, Tailwind CSS, and JavaScript**, with a growing interest in **Next.js and TypeScript**. I enjoy learning new technologies and collaborating on **open-source projects** to improve my skills and contribute to the developer community.
 
-<h2 align="left">About me</h2>
+---
 
-###
+## 🔥 What I'm Currently Doing
 
-<p align="left">Hello! I'm a passionate Frontend Web Developer with a strong commitment to crafting beautiful and functional user interfaces. With a keen eye for design and a drive to keep up with the latest technologies, I specialize in creating responsive, user-friendly websites and applications.</p>
+- 🚀 **Exploring Next.js** - Learning SSR & SSG for better web performance.
+- 💼 **Building My Portfolio** - Showcasing my best projects and frontend skills.
+- 🌍 **Contributing to Open Source** - Collaborating with developers to improve my coding practices.
+- 🎯 **Mastering TypeScript** - Enhancing my JavaScript proficiency with better type safety.
+- 📖 **Learning Backend Development** - Expanding my skill set with Node.js and Express.js.
 
-###
+---
 
-<h2 align="left">Currently activities</h2>
+## 🛠️ My Tech Stack
 
-###
-
-- **Learning Next.js**: Delving into server-side rendering and static site generation to build faster and more efficient web applications.
-- **Building a Portfolio**: Developing a personal portfolio to showcase my projects and skills.
-- **Contributing to Open Source**: Actively participating in open source projects to collaborate with other developers and improve my coding practices.
-- **Exploring TypeScript**: Enhancing my JavaScript skills by learning TypeScript for better type safety and error handling.
-
-
-###
-
-<h2 align="left">I code with</h2>
-
-###
-
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+### 🖥️ Frontend
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML5" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="CSS3" />
   <img width="12" />
-  <img src="https://skillicons.dev/icons?i=tailwind" height="40" alt="tailwindcss logo"  />
+  <img src="https://skillicons.dev/icons?i=tailwind" height="40" alt="Tailwind CSS" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="Bootstrap" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="JavaScript" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="React" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="Next.js" />
   <img width="12" />
-  <img src="https://skillicons.dev/icons?i=express" height="40" alt="express logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=mongodb" height="40" alt="mongodb logo"  />
+  <img src="https://skillicons.dev/icons?i=typescript" height="40" alt="TypeScript" />
 </div>
 
-###
-
-<h2 align="left">Social links</h2>
-
-###
-
-<div align="left">
-  <a href="https://www.facebook.com/MasudRana2005" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/facebook/default.svg" width="52" height="40" alt="facebook logo"  />
-  </a>
-  <a href="https://www.linkedin.com/in/masud-rana-955788318/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
-  </a>
+### ⚙️ Backend & Database
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="Node.js" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=express" height="40" alt="Express.js" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=mongodb" height="40" alt="MongoDB" />
 </div>
 
-###
+### 🛠️ Tools & Technologies
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=git" height="40" alt="Git" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=github" height="40" alt="GitHub" />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=vscode" height="40" alt="VS Code" />
+</div>
 
-<h2 align="left">My Stats</h2>
+---
 
-###
+## 📊 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=masud2005&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=masud2005&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=blueberry&hide_border=false&order=2" height="150" alt="languages graph"  />
-  <img src="https://streak-stats.demolab.com?user=masud2005&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=masud2005&radius=16&theme=react&area=true&order=5" height="300" alt="activity-graph graph"  />
+  <img src="https://github-readme-stats.vercel.app/api?username=masud2005&show_icons=true&count_private=true&theme=dracula&hide_border=false" height="150" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=masud2005&layout=compact&theme=blueberry&hide_border=false" height="150" alt="Top Languages" />
+  <img src="https://streak-stats.demolab.com?user=masud2005&theme=dracula&hide_border=false" height="150" alt="GitHub Streak" />
 </div>
 
-###
+---
 
+## 🌍 Connect With Me
+
+<div align="center">
+  <a href="https://www.facebook.com/MasudRana2005" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/facebook/default.svg" width="52" height="40" alt="Facebook" />
+  </a>
+  <a href="https://www.linkedin.com/in/masud-rana2005/" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="LinkedIn" />
+  </a>
+</div>
+
+---
