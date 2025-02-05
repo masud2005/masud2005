@@ -83,7 +83,7 @@ I'm a passionate **Frontend Web Developer** with a strong commitment to building
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=masud2005&show_icons=true&count_private=true&theme=dracula&hide_border=false" height="150" alt="GitHub Stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=masud2005&layout=compact&theme=blueberry&hide_border=false" height="150" alt="Top Languages" />
-  <img src="https://streak-stats.demolab.com/?user=masud2005&theme=dracula&hide_border=false" height="150" alt="GitHub Streak" />
+  <img src="https://nirzak-streak-stats.vercel.app/?user=masud2005&theme=dracula" height="150" alt="GitHub Streak" />
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=masud2005&theme=react-dark&hide_border=false" height="300" alt="GitHub Contribution Graph" />
 </div>
 
