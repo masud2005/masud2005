@@ -70,6 +70,9 @@ I believe in prioritizing user experience and I'm always eager to learn and grow
   <img src="https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe Badge"/>
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma Badge"/>
   <img src="https://img.shields.io/badge/Pixso-13936F?style=for-the-badge&logo=pixso&logoColor=white" alt="Pixso Badge"/>
+  <img src="https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=react-query&logoColor=white" alt="TanStack Query Badge"/>
+  <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" alt="Axios Badge"/>
+  <img src="https://img.shields.io/badge/Surge-00D1FF?style=for-the-badge&logo=surge&logoColor=white" alt="Surge Badge"/>
 </p>
 
 ---
