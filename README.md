@@ -85,7 +85,7 @@ I believe in prioritizing user experience and I'm always eager to learn and grow
   | Contact | Details |
   | :--- | :--- |
   | 📧 Email | **masud20012005@gmail.com** |
-  | 📱 Phone | **+8801834140688** |
+  | 📱 WhatsApp | **[Click to Chat (+8801834140688)](https://wa.me/8801834140688)** |
   | 🌐 Portfolio | **[masud-rana-mern-portfolio.vercel.app](https://masud-rana-mern-portfolio.vercel.app)** |
   
   <br>
@@ -94,6 +94,9 @@ I believe in prioritizing user experience and I'm always eager to learn and grow
   </a>
   <a href="https://www.linkedin.com/in/masud-rana2005/" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="LinkedIn" />
+  </a>
+  <a href="https://wa.me/8801834140688" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/whatsapp/default.svg" width="52" height="40" alt="WhatsApp" />
   </a>
 </div>
 
