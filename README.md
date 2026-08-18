@@ -3,7 +3,7 @@
   <img 
     src="https://i.ibb.co.com/8nrMtv7Q/Gemini-Generated-Image-hg7iykhg7iykhg7i-jpg-2-K-202608182239.jpg" 
     alt="Md. Masud Rana - Full Stack Developer Banner"
-    height="450"
+    height="400"
     width=100%
   />
 </div>
