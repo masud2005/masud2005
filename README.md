@@ -97,7 +97,7 @@
   <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
 </p>
 
-### Generative AI
+### AI
 
 <p align="left">
   <img src="https://img.shields.io/badge/Generative_AI-7C3AED?style=for-the-badge" />
@@ -150,6 +150,24 @@
   <img src="https://img.shields.io/badge/PNPM-F69220?style=for-the-badge&logo=pnpm&logoColor=white" />
 </p>
 
+## 🌐 Let's Connect
+
+<p align="left">
+  <a href="mailto:masud20012005@gmail.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/masud-rana2005/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://www.facebook.com/MasudRana2005" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
+  </a>
+  <a href="https://wa.me/8801834140688" target="_blank">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+  </a>
+</p>
+
+
 ## 📊 GitHub Stats
 
 <p align="center">
@@ -168,23 +186,6 @@
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=masud2005&theme=tokyonight&no-frame=true&row=1&column=6"/>
-</p>
-
-## 🌐 Let's Connect
-
-<p align="left">
-  <a href="mailto:masud20012005@gmail.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://www.linkedin.com/in/masud-rana2005/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://www.facebook.com/MasudRana2005" target="_blank">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
-  </a>
-  <a href="https://wa.me/8801834140688" target="_blank">
-    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-  </a>
 </p>
 
 <div align="center">
