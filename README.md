@@ -1,10 +1,10 @@
 
 <div align="center">
-  <img 
-    src="masud_rana_github_banner.png" 
-    alt="Masud Rana - Full Stack Developer Banner"
-    width="100%"
-  />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="masud_rana_github_banner_dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="masud_rana_github_banner_light.png">
+    <img alt="Masud Rana - Full Stack Developer Banner" src="masud_rana_github_banner_dark.png" width="100%">
+  </picture>
 </div>
 
 
