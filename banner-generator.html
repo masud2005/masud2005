@@ -45,7 +45,13 @@
         }
 
         .banner-card {
-            background: radial-gradient(circle at 15% 25%, #0b1326 0%, #060a12 70%, #030712 100%);
+            background-color: #030712;
+            background-image: 
+                radial-gradient(circle at 15% 25%, #0b1326 0%, #060a12 70%, transparent 100%),
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+            background-position: 0 0, 20px 20px, 20px 20px;
             box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 35px rgba(56, 189, 248, 0.15);
         }
 
@@ -78,14 +84,22 @@
             color: #0f172a;
         }
         body.light-mode .banner-card {
-            background: radial-gradient(circle at 15% 25%, #ffffff 0%, #f1f5f9 70%, #e2e8f0 100%);
+            background-color: #f8fafc;
+            background-image: 
+                radial-gradient(circle at 15% 25%, #ffffff 0%, #f8fafc 70%, transparent 100%),
+                linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+            background-position: 0 0, 20px 20px, 20px 20px;
             box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.1), 0 0 35px rgba(56, 189, 248, 0.15);
         }
         body.light-mode .text-slate-300, body.light-mode .text-slate-200, body.light-mode .text-white {
-            color: #1e293b !important;
+            color: #0f172a !important;
+            font-weight: 700 !important;
         }
         body.light-mode .text-slate-400 {
-            color: #475569 !important;
+            color: #334155 !important;
+            font-weight: 600 !important;
         }
         body.light-mode .bg-slate-900\/90 {
             background-color: rgba(255, 255, 255, 0.9) !important;
@@ -140,7 +154,7 @@
     </div>
 
     <!-- MAIN BANNER CONTAINER TO BE CAPTURED/EXPORTED -->
-    <div id="bannerContainer" class="relative w-full max-w-7xl aspect-[1200/540] banner-card rounded-3xl overflow-hidden border border-slate-800/80 p-6 md:p-10 flex flex-col justify-between select-none">
+    <div id="bannerContainer" class="relative w-full max-w-7xl aspect-[1200/540] banner-card overflow-hidden border border-slate-800/80 p-6 md:p-10 flex flex-col justify-between select-none">
         
         <!-- Canvas Particle Grid Overlay -->
         <canvas id="bgCanvas"></canvas>
