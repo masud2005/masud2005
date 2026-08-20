@@ -171,7 +171,7 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=masud2005&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true"/>
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=masud2005&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true"/>
 
   <img height="170" src="https://streak-stats.demolab.com?user=masud2005&theme=tokyonight&hide_border=true"/>
 </p>
