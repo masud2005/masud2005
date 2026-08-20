@@ -71,6 +71,44 @@
             height: 100%;
             pointer-events: none;
         }
+
+        /* Light Mode Styles */
+        body.light-mode {
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+        body.light-mode .banner-card {
+            background: radial-gradient(circle at 15% 25%, #ffffff 0%, #f1f5f9 70%, #e2e8f0 100%);
+            box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.1), 0 0 35px rgba(56, 189, 248, 0.15);
+        }
+        body.light-mode .text-slate-300, body.light-mode .text-slate-200, body.light-mode .text-white {
+            color: #1e293b !important;
+        }
+        body.light-mode .text-slate-400 {
+            color: #475569 !important;
+        }
+        body.light-mode .bg-slate-900\/90 {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .border-slate-800, body.light-mode .border-slate-800\/80 {
+            border-color: #cbd5e1 !important;
+        }
+        body.light-mode .tech-badge {
+            background: rgba(255, 255, 255, 0.75);
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+        body.light-mode .tech-badge:hover {
+            background: rgba(241, 245, 249, 0.9);
+            border-color: rgba(56, 189, 248, 0.8);
+        }
+        body.light-mode .shimmer-text {
+            background: linear-gradient(90deg, #0f172a 0%, #0284c7 25%, #4f46e5 50%, #0284c7 75%, #0f172a 100%);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col items-center justify-center p-4 md:p-8">
@@ -86,13 +124,17 @@
         </div>
 
         <div class="flex items-center gap-3">
+            <button onclick="toggleTheme()" class="px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold text-xs rounded-xl flex items-center gap-2 transition-all active:scale-95 cursor-pointer">
+                <i class="fa-solid fa-moon text-sky-400" id="themeIcon"></i> Theme
+            </button>
+
             <button onclick="downloadAsImage()" class="px-5 py-2.5 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-bold text-xs rounded-xl shadow-lg shadow-sky-950/50 flex items-center gap-2 transition-all active:scale-95 cursor-pointer">
                 <i class="fa-solid fa-download"></i>
-                <span>Download HD Image (PNG)</span>
+                <span>Download HD (PNG)</span>
             </button>
 
             <button onclick="copyMarkdown()" class="px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold text-xs rounded-xl flex items-center gap-2 transition-all active:scale-95 cursor-pointer">
-                <i class="fa-regular fa-copy text-sky-400"></i> Copy README HTML Tag
+                <i class="fa-regular fa-copy text-sky-400"></i> Copy Tag
             </button>
         </div>
     </div>
@@ -312,19 +354,37 @@
         }
         animateBg();
 
+        // Theme Toggle Function
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+            const icon = document.getElementById('themeIcon');
+            if (document.body.classList.contains('light-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                icon.classList.remove('text-sky-400');
+                icon.classList.add('text-amber-400');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                icon.classList.remove('text-amber-400');
+                icon.classList.add('text-sky-400');
+            }
+        }
+
         // 100% Exact Image Download Function
         function downloadAsImage() {
             const banner = document.getElementById('bannerContainer');
+            const isLightMode = document.body.classList.contains('light-mode');
 
             // High Quality Capture
             html2canvas(banner, {
                 scale: 3, // 3x Ultra-HD Resolution
                 useCORS: true,
-                backgroundColor: '#040812',
+                backgroundColor: isLightMode ? '#f8fafc' : '#040812',
                 logging: false
             }).then(capturedCanvas => {
                 const link = document.createElement('a');
-                link.download = 'masud_rana_github_banner.png';
+                link.download = isLightMode ? 'masud_rana_github_banner_light.png' : 'masud_rana_github_banner_dark.png';
                 link.href = capturedCanvas.toDataURL('image/png', 1.0);
                 document.body.appendChild(link);
                 link.click();
@@ -335,7 +395,13 @@
         }
 
         function copyMarkdown() {
-            const code = `<div align="center">\n  <img src="masud_rana_github_banner.png" alt="Masud Rana Full Stack Developer" width="100%" />\n</div>`;
+            const code = `<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="masud_rana_github_banner_dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="masud_rana_github_banner_light.png">
+    <img alt="Masud Rana - Full Stack Developer Banner" src="masud_rana_github_banner_dark.png" width="100%">
+  </picture>
+</div>`;
             navigator.clipboard.writeText(code).then(() => {
                 alert("GitHub README HTML code copied to clipboard!");
             });

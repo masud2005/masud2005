@@ -15,10 +15,19 @@ def main():
         # The banner container is #bannerContainer
         banner_element = page.query_selector("#bannerContainer")
         if banner_element:
-            banner_element.screenshot(path="masud_rana_github_banner.png")
-            print("Screenshot taken successfully of the banner container.")
+            # Capture Dark Mode
+            banner_element.screenshot(path="masud_rana_github_banner_dark.png")
+            print("Screenshot taken successfully of the dark banner.")
+            
+            # Switch to Light Mode
+            page.evaluate("document.body.classList.add('light-mode')")
+            time.sleep(1) # wait for animation/re-render if any
+            
+            # Capture Light Mode
+            banner_element.screenshot(path="masud_rana_github_banner_light.png")
+            print("Screenshot taken successfully of the light banner.")
         else:
-            page.screenshot(path="masud_rana_github_banner.png")
+            page.screenshot(path="masud_rana_github_banner_dark.png")
             print("Banner container not found. Fallback: took screenshot of the whole page.")
             
         browser.close()
