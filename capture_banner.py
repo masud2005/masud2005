@@ -5,7 +5,7 @@ import time
 def main():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page(viewport={"width": 1200, "height": 460})
+        page = browser.new_page(viewport={"width": 1200, "height": 600})
         file_url = f"file:///{os.path.abspath('banner-generator.html').replace(os.sep, '/')}"
         page.goto(file_url, wait_until="networkidle")
         
