@@ -1,12 +1,12 @@
 
 <div align="center">
   <img 
-    src="https://i.ibb.co.com/8nrMtv7Q/Gemini-Generated-Image-hg7iykhg7iykhg7i-jpg-2-K-202608182239.jpg" 
-    alt="Md. Masud Rana - Full Stack Developer Banner"
-    height="400"
-    width=100%
+    src="masud_rana_github_banner.png" 
+    alt="Masud Rana - Full Stack Developer Banner"
+    width="100%"
   />
 </div>
+
 
 <h1 align="center">
   Hey there, I'm Masud Rana

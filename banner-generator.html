@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masud Rana - Ultra Wide GitHub Banner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- html2canvas for 100% exact high-res image export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap');
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #040812;
+            color: #f1f5f9;
+        }
+
+        .code-font {
+            font-family: 'Fira Code', monospace;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.4)); }
+            50% { filter: drop-shadow(0 0 35px rgba(56, 189, 248, 0.8)); }
+        }
+
+        @keyframes textShimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .animate-pulse-glow {
+            animation: pulseGlow 4s infinite ease-in-out;
+        }
+
+        .shimmer-text {
+            background: linear-gradient(90deg, #ffffff 0%, #38bdf8 25%, #818cf8 50%, #38bdf8 75%, #ffffff 100%);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: textShimmer 6s linear infinite;
+        }
+
+        .banner-card {
+            background: radial-gradient(circle at 15% 25%, #0b1326 0%, #060a12 70%, #030712 100%);
+            box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 35px rgba(56, 189, 248, 0.15);
+        }
+
+        .tech-badge {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(15, 23, 42, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+        }
+
+        .tech-badge:hover {
+            transform: translateY(-3px) scale(1.03);
+            background: rgba(30, 41, 59, 0.9);
+            border-color: rgba(56, 189, 248, 0.5);
+            box-shadow: 0 10px 20px -5px rgba(56, 189, 248, 0.3);
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 md:p-8">
+
+    <!-- Top Action Bar -->
+    <div class="w-full max-w-7xl mb-6 flex flex-wrap items-center justify-between gap-4 bg-slate-900/90 p-4 rounded-2xl border border-slate-800 backdrop-blur-md">
+        <div>
+            <h1 class="text-base md:text-lg font-bold text-white flex items-center gap-2">
+                <i class="fa-brands fa-github text-sky-400 text-xl"></i>
+                GitHub Profile Banner Generator
+            </h1>
+            <p class="text-xs text-slate-400">100% Exact High-Res Image Export • Mongoose & Facebook Included</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <button onclick="downloadAsImage()" class="px-5 py-2.5 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-bold text-xs rounded-xl shadow-lg shadow-sky-950/50 flex items-center gap-2 transition-all active:scale-95 cursor-pointer">
+                <i class="fa-solid fa-download"></i>
+                <span>Download HD Image (PNG)</span>
+            </button>
+
+            <button onclick="copyMarkdown()" class="px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold text-xs rounded-xl flex items-center gap-2 transition-all active:scale-95 cursor-pointer">
+                <i class="fa-regular fa-copy text-sky-400"></i> Copy README HTML Tag
+            </button>
+        </div>
+    </div>
+
+    <!-- MAIN BANNER CONTAINER TO BE CAPTURED/EXPORTED -->
+    <div id="bannerContainer" class="relative w-full max-w-7xl aspect-[1200/460] banner-card rounded-3xl overflow-hidden border border-slate-800/80 p-6 md:p-10 flex flex-col justify-between select-none">
+        
+        <!-- Canvas Particle Grid Overlay -->
+        <canvas id="bgCanvas"></canvas>
+
+        <!-- Top Header Row -->
+        <div class="relative z-10 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="relative w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center bg-slate-900/90 border border-sky-500/30 animate-pulse-glow">
+                    <div class="absolute inset-0 rounded-full border border-sky-400/20 border-dashed animate-spin" style="animation-duration: 22s;"></div>
+                    <span class="code-font text-sky-400 font-bold text-lg md:text-xl">&lt;/&gt;</span>
+                </div>
+                <div>
+                    <span class="text-[10px] md:text-xs font-semibold uppercase tracking-widest text-sky-400/90 code-font">FULL STACK PORTFOLIO</span>
+                    <h3 class="text-xs md:text-sm font-semibold text-slate-300">Software Engineer</h3>
+                </div>
+            </div>
+
+            <!-- Right Circuit Graphic -->
+            <div class="hidden md:flex items-center gap-2 opacity-85">
+                <svg width="220" height="50" viewBox="0 0 220 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 25H90L120 10H190" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4" class="animate-pulse"/>
+                    <circle cx="190" cy="10" r="4" fill="#38bdf8"/>
+                    <path d="M40 40H130 L160 25H210" stroke="#818cf8" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="210" cy="25" r="4" fill="#818cf8"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Center Main Details -->
+        <div class="relative z-10 text-center my-auto py-2">
+            <h1 class="text-3xl md:text-5xl font-black tracking-tight shimmer-text uppercase mb-1">
+                MASUD RANA
+            </h1>
+            <div class="flex items-center justify-center gap-3 mb-2">
+                <div class="h-[1px] w-16 bg-gradient-to-r from-transparent to-sky-400"></div>
+                <p class="text-xs md:text-sm font-bold uppercase tracking-[0.25em] text-slate-300 code-font">
+                    FULL STACK DEVELOPER
+                </p>
+                <div class="h-[1px] w-16 bg-gradient-to-l from-transparent to-sky-400"></div>
+            </div>
+
+            <p class="text-xs text-slate-400 font-medium max-w-xl mx-auto mb-3">
+                Building Scalable <span class="text-sky-400">•</span> Secure <span class="text-sky-400">•</span> Production-Ready Web Applications
+            </p>
+
+            <!-- Social Contacts (Including Facebook) -->
+            <div class="flex flex-wrap items-center justify-center gap-2 text-[11px]">
+                <a href="mailto:masud20012005@gmail.com" class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 border border-slate-800 text-slate-300">
+                    <i class="fa-regular fa-envelope text-sky-400"></i> masud20012005@gmail.com
+                </a>
+                <a href="tel:+8801834140688" class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 border border-slate-800 text-slate-300">
+                    <i class="fa-solid fa-phone text-emerald-400"></i> +880 183 414 0688
+                </a>
+                <span class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 border border-slate-800 text-slate-300">
+                    <i class="fa-solid fa-location-dot text-rose-400"></i> Dhaka, Bangladesh
+                </span>
+                <a href="https://linkedin.com/in/masud-rana2005/" target="_blank" class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 border border-slate-800 text-slate-300">
+                    <i class="fa-brands fa-linkedin text-blue-400"></i> masud-rana2005
+                </a>
+                <a href="https://facebook.com/MasudRana2005" target="_blank" class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 border border-slate-800 text-slate-300">
+                    <i class="fa-brands fa-facebook text-blue-500"></i> MasudRana2005
+                </a>
+                <a href="https://wa.me/8801834140688" target="_blank" class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900/90 border border-slate-800 text-slate-300">
+                    <i class="fa-brands fa-whatsapp text-emerald-400"></i> +8801834140688
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Tech Grid (Balanced 10x2 = 20 Items) -->
+        <div class="relative z-10 pt-3 border-t border-slate-800/80">
+            <!-- Row 1: 10 Items -->
+            <div class="grid grid-cols-5 sm:grid-cols-10 gap-2 mb-2">
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-brands fa-html5 text-xl text-orange-500 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">HTML5</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-brands fa-css3-alt text-xl text-blue-500 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">CSS3</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-brands fa-js text-xl text-yellow-400 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">JavaScript</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <span class="text-xs font-bold text-blue-400 code-font mb-0.5 bg-blue-950/50 px-1 rounded">TS</span>
+                    <span class="text-[10px] font-semibold text-slate-300">TypeScript</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-brands fa-python text-xl text-amber-300 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">Python</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-brands fa-react text-xl text-sky-400 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">React</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <span class="text-xs font-bold text-white code-font mb-0.5">N</span>
+                    <span class="text-[10px] font-semibold text-slate-300">Next.js</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-solid fa-cubes text-xl text-purple-400 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">Redux</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-brands fa-node-js text-xl text-emerald-500 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">Node.js</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <span class="text-xs font-extrabold text-slate-200 code-font mb-0.5">ex</span>
+                    <span class="text-[10px] font-semibold text-slate-300">Express.js</span>
+                </div>
+            </div>
+
+            <!-- Row 2: 10 Items (Including Mongoose) -->
+            <div class="grid grid-cols-5 sm:grid-cols-10 gap-2">
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-solid fa-feather text-lg text-rose-500 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">NestJS</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-solid fa-database text-lg text-blue-400 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">PostgreSQL</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-solid fa-gem text-lg text-indigo-400 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">Prisma</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-solid fa-leaf text-lg text-emerald-400 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">MongoDB</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-solid fa-shield-cat text-lg text-red-400 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">Mongoose</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-solid fa-cubes-stacked text-lg text-red-500 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">Redis</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-brands fa-docker text-lg text-sky-500 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">Docker</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-brands fa-linux text-lg text-yellow-300 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">Linux</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-brands fa-aws text-lg text-amber-400 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">AWS</span>
+                </div>
+                <div class="tech-badge p-2 rounded-xl flex flex-col items-center justify-center text-center">
+                    <i class="fa-solid fa-diagram-project text-lg text-blue-400 mb-0.5"></i>
+                    <span class="text-[10px] font-semibold text-slate-300">Actions</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts for Particle Background & Image Capture -->
+    <script>
+        // Particle Background Animation
+        const canvas = document.getElementById('bgCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            const container = document.getElementById('bannerContainer');
+            canvas.width = container.clientWidth;
+            canvas.height = container.clientHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        const particles = Array.from({ length: 45 }, () => ({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            size: Math.random() * 2 + 0.5,
+            vx: (Math.random() - 0.5) * 0.4,
+            vy: (Math.random() - 0.5) * 0.4,
+            opacity: Math.random() * 0.6 + 0.2
+        }));
+
+        function animateBg() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach((p, index) => {
+                p.x += p.vx;
+                p.y += p.vy;
+
+                if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+                if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+                ctx.fillStyle = `rgba(56, 189, 248, ${p.opacity})`;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Connect nearby particles
+                for (let j = index + 1; j < particles.length; j++) {
+                    const p2 = particles[j];
+                    const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+                    if (dist < 90) {
+                        ctx.strokeStyle = `rgba(56, 189, 248, ${0.15 * (1 - dist / 90)})`;
+                        ctx.lineWidth = 0.6;
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.stroke();
+                    }
+                }
+            });
+            requestAnimationFrame(animateBg);
+        }
+        animateBg();
+
+        // 100% Exact Image Download Function
+        function downloadAsImage() {
+            const banner = document.getElementById('bannerContainer');
+
+            // High Quality Capture
+            html2canvas(banner, {
+                scale: 3, // 3x Ultra-HD Resolution
+                useCORS: true,
+                backgroundColor: '#040812',
+                logging: false
+            }).then(capturedCanvas => {
+                const link = document.createElement('a');
+                link.download = 'masud_rana_github_banner.png';
+                link.href = capturedCanvas.toDataURL('image/png', 1.0);
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }).catch(err => {
+                alert("Image download error. Please try again.");
+            });
+        }
+
+        function copyMarkdown() {
+            const code = `<div align="center">\n  <img src="masud_rana_github_banner.png" alt="Masud Rana Full Stack Developer" width="100%" />\n</div>`;
+            navigator.clipboard.writeText(code).then(() => {
+                alert("GitHub README HTML code copied to clipboard!");
+            });
+        }
+    </script>
+</body>
+</html>
